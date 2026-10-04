@@ -1,0 +1,94 @@
+<meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1280px;height:720px;overflow:hidden;}
+  body{font-family:'Pretendard','Apple SD Gothic Neo',sans-serif;
+    background:#04070d center/cover no-repeat; position:relative; color:#f4f9ff;}
+  .scrim{position:absolute;inset:0;}
+  .vig{position:absolute;inset:0;
+    background:radial-gradient(130% 130% at 50% 45%,transparent 60%,rgba(0,0,0,.5));}
+  .wrap{position:absolute;inset:0;display:flex;flex-direction:column;
+    justify-content:center;padding:70px 74px;gap:26px;}
+
+  /* Meta × Claude brand lockup */
+  .brandbar{position:absolute;top:52px;display:inline-flex;align-items:center;
+    gap:16px;padding:11px 22px 11px 18px;border-radius:999px;
+    background:rgba(8,12,20,.62);border:1.5px solid rgba(255,255,255,.16);
+    backdrop-filter:blur(8px);box-shadow:0 6px 26px rgba(0,0,0,.5);}
+  .brand{display:inline-flex;align-items:center;gap:11px;font-weight:800;
+    font-size:31px;letter-spacing:-.02em;color:#eef4fb;}
+  .brand .mk{font-size:34px;font-weight:900;line-height:1;}
+  .brand.meta .mk{color:#3b9bff;text-shadow:0 0 16px rgba(59,155,255,.7);}
+  .claude-spark{width:38px;height:38px;
+    filter:drop-shadow(0 0 7px rgba(217,119,87,.75));}
+  .brand.claude{color:#f4d9cd;}
+  .bx{font-size:26px;font-weight:700;color:#7d8ba0;}
+
+  body.left .brandbar{left:74px;}
+  body.right .brandbar{right:74px;}
+
+  .eyebrow{display:inline-flex;align-items:center;gap:16px;font-weight:800;
+    font-size:41px;letter-spacing:-.02em;color:#d3e7f7;
+    text-shadow:0 2px 12px rgba(0,0,0,.85);}
+  .eyebrow .bar{width:8px;height:44px;border-radius:6px;background:#22d3ee;
+    box-shadow:0 0 18px rgba(34,211,238,.8);}
+
+  h1{font-weight:900;line-height:.97;letter-spacing:-.045em;
+    text-shadow:0 6px 34px rgba(0,0,0,.9),0 2px 10px rgba(0,0,0,.9);}
+  h1 .l1{display:block;color:#f4f9ff;}
+  h1 .l2{display:block;margin-top:8px;}
+  .hot{color:#ffc233;
+    text-shadow:0 0 40px rgba(255,194,51,.65),0 6px 30px rgba(0,0,0,.85);}
+
+  .tag{display:inline-flex;align-items:center;gap:14px;font-weight:800;
+    font-size:31px;letter-spacing:-.01em;color:#bfeef8;
+    text-shadow:0 2px 10px rgba(0,0,0,.9);}
+  .tag .dot{color:#3a4b60;}
+  .tag em{color:#22d3ee;font-style:normal;}
+
+  /* left variant */
+  body.left .wrap{align-items:flex-start;text-align:left;}
+  body.left .scrim{background:linear-gradient(90deg,
+    rgba(3,6,12,.9) 0%,rgba(3,6,12,.66) 34%,rgba(3,6,12,.2) 55%,transparent 70%);}
+  body.left h1{font-size:120px;}
+
+  /* right variant */
+  body.right .wrap{align-items:flex-end;text-align:right;}
+  body.right .scrim{background:linear-gradient(270deg,
+    rgba(3,6,12,.92) 0%,rgba(3,6,12,.7) 36%,rgba(3,6,12,.22) 58%,transparent 74%);}
+  body.right .eyebrow{flex-direction:row-reverse;}
+  body.right h1{font-size:104px;}
+</style>
+<div class="scrim"></div>
+<div class="vig"></div>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <line id="cray" x1="0" y1="-13" x2="0" y2="-45" stroke="#d97757" stroke-width="6.2" stroke-linecap="round"/>
+</defs></svg>
+
+<div class="brandbar">
+  <span class="brand meta"><span class="mk">&#8734;</span>Meta</span>
+  <span class="bx">&#215;</span>
+  <span class="brand claude">
+    <svg class="claude-spark" viewBox="-50 -50 100 100" aria-label="Claude">
+      <use href="#cray"/><use href="#cray" transform="rotate(30)"/><use href="#cray" transform="rotate(60)"/>
+      <use href="#cray" transform="rotate(90)"/><use href="#cray" transform="rotate(120)"/><use href="#cray" transform="rotate(150)"/>
+      <use href="#cray" transform="rotate(180)"/><use href="#cray" transform="rotate(210)"/><use href="#cray" transform="rotate(240)"/>
+      <use href="#cray" transform="rotate(270)"/><use href="#cray" transform="rotate(300)"/><use href="#cray" transform="rotate(330)"/>
+    </svg>Claude
+  </span>
+</div>
+
+<div class="wrap">
+  <div class="eyebrow"><span class="bar"></span><span>메타광고 고수들이 쓰는</span></div>
+  <h1><span class="l1">클로드</span><span class="l2"><span class="hot">미친</span> 기능</span></h1>
+  <div class="tag"><span>메타 공식 MCP</span><span class="dot">·</span><span><em>무료</em></span><span class="dot">·</span><span>연결 <em>5분</em></span></div>
+</div>
+<script>
+  const q=new URLSearchParams(location.search);
+  const bg=q.get('bg')||'bg1.png';
+  const side=q.get('side')||'left';
+  document.body.classList.add(side);
+  document.body.style.backgroundImage=`url('${bg}')`;
+  document.body.style.backgroundPosition = side==='left' ? 'right center' : 'left center';
+</script>

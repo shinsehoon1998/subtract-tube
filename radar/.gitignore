@@ -1,0 +1,4 @@
+.viewtrap-profile/
+data/
+.env
+node_modules/

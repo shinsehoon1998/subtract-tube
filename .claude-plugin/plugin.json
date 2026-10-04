@@ -1,0 +1,23 @@
+{
+  "name": "subtract-tube",
+  "version": "0.1.0",
+  "description": "빼기연구소 유튜브 자동화 — 비즈니스PT 방법론을 인코딩한 페이스리스 롱폼 제작 스킬 묶음 (주제·제목·썸네일·원고·SEO·분석 → 음성·렌더)",
+  "author": {
+    "name": "빼기연구소 (나는빼기연구소)"
+  },
+  "keywords": [
+    "youtube",
+    "automation",
+    "faceless",
+    "script-writing",
+    "content-marketing",
+    "korean",
+    "claude-code",
+    "skills"
+  ],
+  "license": "UNLICENSED",
+  "mcpServers": {},
+  "skills": [
+    "./skills/"
+  ]
+}

@@ -1,0 +1,5 @@
+# 1단계 — 모니터링할 "지정 해외 유튜버" 목록 (매일 신규 업로드 수집·채점)
+freshness_days: 60
+channels:
+  - "UC2ojq-nuP8ceeHqiroeKhBA"
+  - "UCmeU2DYiVy80wMBGZzEWnbw"

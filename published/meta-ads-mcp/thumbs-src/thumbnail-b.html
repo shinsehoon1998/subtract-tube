@@ -1,0 +1,82 @@
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --bg:#080607; --ink:#f6f2f2; --dim:#9a8b8b;
+    --red:#ef4444; --red2:#ff6b5a; --blue:#22d3ee;
+  }
+  html,body{ width:1280px; height:720px; }
+  body{
+    font-family:'Pretendard','Apple SD Gothic Neo',sans-serif;
+    background:var(--bg); color:var(--ink); overflow:hidden; position:relative;
+  }
+  .grid{ position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(210,110,110,.05) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(210,110,110,.05) 1px,transparent 1px);
+    background-size:56px 56px; }
+  .glow{ position:absolute; border-radius:50%; filter:blur(90px); }
+  .glow.red{ width:760px; height:760px; right:-140px; top:-120px;
+    background:radial-gradient(closest-side,rgba(239,68,68,.42),transparent 70%); }
+  .glow.blue{ width:420px; height:420px; left:-140px; bottom:-200px;
+    background:radial-gradient(closest-side,rgba(34,211,238,.14),transparent 70%); }
+  .vig{ position:absolute; inset:0;
+    background:radial-gradient(120% 120% at 22% 45%,transparent 52%,rgba(0,0,0,.62)); }
+
+  .wrap{ position:absolute; inset:0; padding:66px 64px; }
+
+  .kicker{ display:flex; align-items:center; gap:14px;
+    font-weight:800; font-size:31px; color:var(--dim); letter-spacing:-.01em; }
+  .kicker .warn{ font-size:30px; filter:drop-shadow(0 0 10px rgba(239,68,68,.8)); }
+
+  .head{ margin-top:30px; font-weight:900; font-size:138px; line-height:.98;
+    letter-spacing:-.05em; text-shadow:0 6px 30px rgba(0,0,0,.6); }
+  .head .l2{ display:block; margin-top:8px; }
+  .red{ color:var(--red2);
+    text-shadow:0 0 40px rgba(239,68,68,.75),0 6px 30px rgba(0,0,0,.5); }
+
+  .sub{ margin-top:40px; font-weight:800; font-size:40px; letter-spacing:-.02em;
+    color:#e9dede; display:flex; align-items:center; gap:16px; }
+  .sub .arrow{ color:var(--blue); font-weight:900; }
+  .sub b{ color:var(--blue); font-weight:900; }
+  .sub .safe{ font-size:34px; padding:8px 20px; border-radius:14px;
+    background:rgba(34,211,238,.12); border:1.5px solid rgba(34,211,238,.5);
+    color:#bff2fb; }
+
+  /* hero key */
+  .key{ position:absolute; right:70px; top:50%; transform:translateY(-52%) rotate(-14deg);
+    font-size:400px; line-height:1;
+    filter:drop-shadow(0 12px 40px rgba(239,68,68,.55)); }
+  .lock{ position:absolute; right:96px; top:70px; font-size:150px;
+    filter:drop-shadow(0 0 26px rgba(239,68,68,.7)); }
+
+  .bottom{ position:absolute; left:0; right:0; bottom:0; height:78px;
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(0deg,rgba(6,4,5,.96),rgba(6,4,5,0));
+    border-top:2px solid rgba(239,68,68,.45);
+    font-weight:800; font-size:33px; letter-spacing:-.01em; color:#efe2e2; }
+  .bottom .s{ color:#6a4c4c; margin:0 18px; }
+  .bottom em{ color:var(--blue); font-style:normal; }
+</style>
+<div class="grid"></div>
+<div class="glow red"></div>
+<div class="glow blue"></div>
+<div class="vig"></div>
+
+<div class="lock">🔒</div>
+<div class="key">🔑</div>
+
+<div class="wrap">
+  <div class="kicker"><span class="warn">⚠️</span><span>클로드로 광고 자동화, 따라 하다…</span></div>
+  <div class="head">
+    계정이 잠긴
+    <span class="l2"><span class="red">진짜 이유</span></span>
+  </div>
+  <div class="sub">
+    <span class="arrow">→</span><span>이제 <b>메타 공식</b>으로</span><span class="safe">안전하게</span>
+  </div>
+</div>
+
+<div class="bottom">
+  <span>남의 서버에 <em>내 열쇠</em>를 맡긴 셈</span><span class="s">·</span><span>공식 MCP <em>무료</em></span>
+</div>

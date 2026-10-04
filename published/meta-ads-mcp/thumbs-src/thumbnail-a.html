@@ -1,0 +1,104 @@
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --bg:#06080d; --ink:#f4f7fb; --dim:#8494a8;
+    --blue:#22d3ee; --blue2:#38bdf8; --amber:#f59e0b; --red:#f0663f;
+  }
+  html,body{ width:1280px; height:720px; }
+  body{
+    font-family:'Pretendard','Apple SD Gothic Neo',sans-serif;
+    background:var(--bg); color:var(--ink); overflow:hidden; position:relative;
+  }
+  /* atmosphere */
+  .grid{ position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(90,140,210,.06) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(90,140,210,.06) 1px,transparent 1px);
+    background-size:56px 56px; }
+  .glow{ position:absolute; border-radius:50%; filter:blur(80px); }
+  .glow.a{ width:720px; height:720px; right:-120px; top:-160px;
+    background:radial-gradient(closest-side,rgba(34,211,238,.34),transparent 70%); }
+  .glow.b{ width:560px; height:560px; left:-160px; bottom:-220px;
+    background:radial-gradient(closest-side,rgba(56,189,248,.14),transparent 70%); }
+  .vig{ position:absolute; inset:0;
+    background:radial-gradient(120% 120% at 25% 40%,transparent 55%,rgba(0,0,0,.55)); }
+
+  .wrap{ position:absolute; inset:0; padding:60px 64px; }
+
+  .kicker{ display:flex; align-items:center; gap:14px;
+    font-weight:800; font-size:31px; color:var(--dim); letter-spacing:-.01em; }
+  .kicker .dot{ width:9px; height:9px; border-radius:50%; background:var(--red);
+    box-shadow:0 0 16px var(--red); }
+  .kicker b{ color:#f5c0ad; font-weight:800; }
+
+  .head{ margin-top:26px; font-weight:900; font-size:132px; line-height:1.0;
+    letter-spacing:-.045em; text-shadow:0 6px 30px rgba(0,0,0,.55); }
+  .head .l2{ display:block; margin-top:6px; }
+  .cyan{ color:var(--blue);
+    text-shadow:0 0 34px rgba(34,211,238,.7),0 6px 30px rgba(0,0,0,.5); }
+
+  .badges{ margin-top:40px; display:flex; gap:14px; }
+  .pill{ font-weight:800; font-size:32px; letter-spacing:-.02em;
+    padding:14px 26px; border-radius:999px;
+    background:rgba(255,255,255,.05); border:1.5px solid rgba(255,255,255,.14);
+    color:#e7eef7; backdrop-filter:blur(4px); }
+  .pill.hot{ background:rgba(34,211,238,.14); border-color:rgba(34,211,238,.55);
+    color:#bff2fb; box-shadow:0 0 26px rgba(34,211,238,.28); }
+  .pill.num5 b{ color:var(--blue); font-weight:900; font-size:38px;
+    text-shadow:0 0 20px rgba(34,211,238,.6); }
+
+  /* brand connect device (right) */
+  .device{ position:absolute; right:96px; top:50%; transform:translateY(-50%);
+    display:flex; flex-direction:column; align-items:center; gap:16px; }
+  .node{ width:196px; height:196px; border-radius:44px;
+    display:flex; align-items:center; justify-content:center;
+    font-size:110px; font-weight:900;
+    background:linear-gradient(160deg,rgba(20,28,40,.96),rgba(9,13,20,.96)); }
+  .node.meta{ border:2.5px solid rgba(56,189,248,.85);
+    box-shadow:0 0 46px rgba(34,211,238,.45),inset 0 0 34px rgba(34,211,238,.12);
+    color:#7fdcf3; }
+  .node.claude{ border:2.5px solid rgba(240,102,63,.85);
+    box-shadow:0 0 46px rgba(240,102,63,.35),inset 0 0 34px rgba(240,102,63,.1);
+    color:#f6906f; }
+  .zap{ font-size:52px; line-height:.6; filter:drop-shadow(0 0 14px rgba(245,158,11,.8)); }
+  .num{ position:absolute; right:70px; top:44px; text-align:center; }
+  .num .n{ font-weight:900; font-size:96px; color:var(--blue); line-height:.9;
+    text-shadow:0 0 30px rgba(34,211,238,.6); }
+  .num .cap{ font-weight:800; font-size:26px; color:#cfe9f2; letter-spacing:-.02em; margin-top:2px; }
+
+  .bottom{ position:absolute; left:0; right:0; bottom:0; height:78px;
+    display:flex; align-items:center; justify-content:center; gap:0;
+    background:linear-gradient(0deg,rgba(4,7,12,.96),rgba(4,7,12,.0));
+    border-top:2px solid rgba(34,211,238,.5);
+    font-weight:800; font-size:33px; letter-spacing:-.01em; color:#dfe9f4; }
+  .bottom .s{ color:#4a5a70; margin:0 20px; }
+  .bottom em{ color:var(--blue); font-style:normal; }
+</style>
+<div class="grid"></div>
+<div class="glow a"></div>
+<div class="glow b"></div>
+<div class="vig"></div>
+
+<div class="wrap">
+  <div class="kicker"><span class="dot"></span><span>비공식 따라하다 <b>계정 정지</b> — 이제 공식입니다</span></div>
+  <div class="head">
+    메타 광고,
+    <span class="l2"><span class="cyan">채팅으로</span> 끝</span>
+  </div>
+  <div class="badges">
+    <span class="pill hot">메타 공식 MCP</span>
+    <span class="pill num5">실전 <b>5</b>가지</span>
+    <span class="pill">무료</span>
+  </div>
+</div>
+
+<div class="device">
+  <div class="node meta">∞</div>
+  <div class="zap">⚡</div>
+  <div class="node claude">✳</div>
+</div>
+
+<div class="bottom">
+  <span>클로드로 자동화</span><span class="s">·</span><span>보고서 <em>1줄</em></span><span class="s">·</span><span>연결 <em>5분</em></span>
+</div>

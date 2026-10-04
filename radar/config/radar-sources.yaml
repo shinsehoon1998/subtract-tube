@@ -1,0 +1,27 @@
+freshness_days: 60
+categories:
+  topic:
+    method: channel
+    channels:
+      - UC2ojq-nuP8ceeHqiroeKhBA
+      - UCmeU2DYiVy80wMBGZzEWnbw
+  title_thumb:
+    method: viewtrap_hot
+    viewtrap:
+      sort: subs_asc
+      minGrade: Good
+      limit: 30
+  hook:
+    method: channel
+    channels:
+      - UC2ojq-nuP8ceeHqiroeKhBA
+  body:
+    method:
+      - viewtrap_hot
+      - channel
+    channels:
+      - UCmeU2DYiVy80wMBGZzEWnbw
+    viewtrap:
+      sort: subs_asc
+      minGrade: Good
+      limit: 30

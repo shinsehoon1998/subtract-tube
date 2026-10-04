@@ -1,0 +1,5 @@
+{
+  "weights": { "fit": 0.35, "performance": 0.25, "contribution": 0.20, "views": 0.20 },
+  "freshness_days": 30,
+  "grade_map": { "worst": 0, "bad": 25, "normal": 50, "good": 75, "great": 100 }
+}

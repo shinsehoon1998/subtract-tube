@@ -1,0 +1,14 @@
+{
+  "name": "subtract-tube",
+  "owner": {
+    "name": "빼기연구소",
+    "url": "https://github.com/shinsehoon1998"
+  },
+  "plugins": [
+    {
+      "name": "subtract-tube",
+      "source": "./",
+      "description": "빼기연구소 유튜브 자동화 — 비즈니스PT 방법론을 인코딩한 페이스리스 롱폼 제작 스킬 10종 (주제·구조·원고·썸네일·음성·렌더·SEO·분석)"
+    }
+  ]
+}

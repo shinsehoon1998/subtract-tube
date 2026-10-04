@@ -1,0 +1,10 @@
+{
+  "bg": "#0a0b0f",
+  "bgGlow": "#1b2330",
+  "text": "#f4f5f7",
+  "accent": "#5b9dff",
+  "bgImage": null,
+  "motionPreset": "calm",
+  "brandLabel": "빼기연구소",
+  "_note": "채널별 렌더 스타일. bgImage는 remotion/public 하위 파일명(예: 'background.png') 또는 null. motionPreset: 'calm' | 'dynamic'. 창작자의 CLAUDE.md식 커스터마이징."
+}

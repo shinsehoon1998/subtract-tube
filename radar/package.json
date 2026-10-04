@@ -1,0 +1,20 @@
+{
+  "name": "subtract-tube-radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "1~4단계 소싱 자동화 — Data API 수집 + 적합도 채점 + 노션 적재 (하이브리드)",
+  "scripts": {
+    "fetch": "node src/fetch-uploads.mjs",
+    "collect": "node src/collect.mjs",
+    "viewtrap": "node src/viewtrap/collect-hotvideos.mjs"
+  },
+  "dependencies": {
+    "@higgsfield/client": "^0.2.1",
+    "@notionhq/client": "^2.2.15",
+    "yaml": "^2.5.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.0"
+  }
+}

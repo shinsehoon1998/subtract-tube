@@ -1,0 +1,23 @@
+{
+  "projectId": "sol-vs-fable",
+  "title": "벤치마크는 Sol이 압승했는데, 제 실무는 아직 Fable이 합니다",
+  "titleAlternatives": [
+    "하루 종일 둘을 붙여봤더니, 벤치마크가 거짓말이었습니다 (Sol vs Fable 5)",
+    "20배 싼 AI를 두고, 왜 저는 비싼 걸 골랐을까",
+    "7분 vs 23분, $1 vs $19 — 그런데 제가 고른 건"
+  ],
+  "description": "벤치마크만 보면 GPT-5.6 Sol이 Fable 5를 압살합니다. 훨씬 싸고, 훨씬 빠르죠.\n그래서 하루 종일 둘을 나란히 붙여봤습니다. 같은 프롬프트, 같은 작업, 실시간 대결로요.\n\n결론부터: Fable은 더 똑똑한 '매니저', Sol은 빠르고 싼 '일꾼'이었습니다.\n언제 뭘 꺼내 써야 하는지, 실전 3판 대결 결과로 정리했습니다.\n\n⏱️ 타임스탬프\n00:00 7분 vs 23분, $1 vs $19 (근데 왜?)\n00:26 오늘 볼 것 세 가지\n00:42 성적표와 실무 사이의 강\n01:11 ① 벤치마크가 광고인 이유\n01:33 ② 실전 3판 — 게임·웹·자유과제\n02:49 API 단발 27판의 함정\n03:45 ③ 매니저 vs 일꾼\n04:40 모델 고르기 전 3가지 질문\n05:05 오늘부터 할 것 3가지\n05:19 하루를 태우고 나서야 알았던 것\n\n🔔 구독 & 좋아요 부탁드립니다!",
+  "tags": ["Fable5", "GPT5", "GPT5.6", "Sol", "클로드코드", "ClaudeCode", "Codex", "AI코딩", "바이브코딩", "AI모델비교", "개발자도구", "빼기연구소"],
+  "thumbnail": "thumbnail.png",
+  "video": "video.mp4",
+  "durationSec": 341.67,
+  "resolution": "1920x1080",
+  "codec": "H.264 + AAC",
+  "voice": "신세훈 (ElevenLabs 보이스클론)",
+  "palette": "네온 파랑 / 검정 / 빨강(긴장)",
+  "source": {
+    "topicVideo": "https://www.youtube.com/watch?v=EthxaDswUFo",
+    "structureRef": "https://youtu.be/EPNAFo9iM9s"
+  },
+  "createdAt": "2026-07-14"
+}

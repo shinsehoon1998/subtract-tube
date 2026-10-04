@@ -1,0 +1,21 @@
+{
+  "name": "subtract-tube-remotion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "subtract-tube 페이스리스 렌더 엔진 (yt-render): manifest.json + 세그먼트 → mp4",
+  "scripts": {
+    "studio": "remotion studio src/index.tsx",
+    "render": "remotion render src/index.tsx SubtractVideo out/video.mp4",
+    "compositions": "remotion compositions src/index.tsx"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "music-metadata": "^11.13.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0"
+  }
+}
